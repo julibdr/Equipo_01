@@ -4,29 +4,31 @@
         "nombre": "Iphone 12",
         "descripcion": "Este iphone cuenta con una pantalla Super Retina XDR de 6.1 pulgadas. Con opciones de 64 GB, 128 GB O 256 GB. El sistemas de camaras trasero es dual. Usa Face Id para la seguridad y corre iOS 14",
         "precio": 1100,
-        "imagen": "img/iphone-12.jpeg"
+        "imagen": "img/iphone/iphone-12.jpeg"
       },
       {
         "nombre": "iPhone 14",
         "descripcion": "El iPhone 14 Pro te permite captar detalles increíbles gracias a su cámara gran angular de 48 MP. Y viene con Detección de Choques(1), una funcionalidad de seguridad que pide ayuda cuando no estás en condiciones de hacerlo.",
         "precio": 1500,
-        "imagen": "img/iphone-14jpg.jpg"
+        "imagen": "img/iphone/iphone-14jpg.jpg"
       },
       {
         "nombre": "iPhone 13",
         "descripcion": "El sistema de dos cámaras más avanzado en un iPhone. El superrápido chip A15 Bionic. Un gran salto en duración de batería. Un diseño resistente.Y una pantalla Super Retina XDR más brillante.",
         "precio": 1300,
-        "imagen": "img/iphone13.jpg"
+        "imagen": "img/iphone/iphone13.jpg"
       },
     {
         "nombre": "iPhone SE",
         "descripcion": "El chip A15 Bionic mejora prácticamente todo lo que haces con el iPhone. Las apps se cargan al instante y funcionan con total fluidez.Rendimiento grafico hasta 1.2 veces ms rápido.",
         "precio": 1000,
-        "imagen": "img/iphone-SE.jpg"
+        "imagen": "img/iphone/iphone-SE.jpg"
       }
       
       
+    ],
+    "ipad": [
+
     ]
-  
   }
   
