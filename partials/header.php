@@ -21,13 +21,13 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.php">Home</a>
+                    <a class="nav-link active" href="index.php?seccion=home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="productos.php">Productos</a>
+                    <a class="nav-link" href="index.php?seccion=productos">Productos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contacto.php">Contacto</a>
+                    <a class="nav-link" href="index.php?seccion=contacto">Contacto</a>
                 </li>
             </ul>
         </div>
