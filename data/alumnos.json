@@ -1,0 +1,25 @@
+{
+    "alumnos": [
+        {
+            "imagen": "img/alumnos/ailen.jpg",
+            "nombre": "Ailen Alvarez",
+            "edad": "07/05/1998",
+            "correo": "ailen.alvarez@davinci.edu.ar",
+            "redes": "ailenad"
+        },
+        {
+        "imagen": "img/alumnos/julieta.jpg",    
+        "nombre": "Julieta Bariandaran",
+        "edad": "15/04/2004",
+        "correo": "julieta.bariandaran@davinci.edu.ar",
+        "redes": "julibdr"
+    },
+    {
+        "imagen": "img/alumnos/lourdes.jpg",
+        "nombre": "Lourdes Martinez Fuschino",
+        "edad": "12/07/2002",
+        "correo": "lourdes.martinez@davinci.edu.ar",
+        "redes": "luli-martinez"
+    }
+]
+}
