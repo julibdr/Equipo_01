@@ -1,14 +1,14 @@
 {
     "alumnos": [
         {
-            "imagen": "img/alumnos/ailen.jpg",
-            "nombre": "Ailen Alvarez",
-            "edad": "07/05/1998",
-            "correo": "ailen.alvarez@davinci.edu.ar",
-            "redes": "ailenad"
+        "imagen": "img/alumnos/Ailen.png",
+        "nombre": "Ailen Alvarez",
+        "edad": "07/05/1998",
+        "correo": "ailen.alvarez@davinci.edu.ar",
+        "redes": "ailenad"
         },
         {
-        "imagen": "img/alumnos/julieta.jpg",    
+        "imagen": "img/alumnos/Julieta.jpeg",    
         "nombre": "Julieta Bariandaran",
         "edad": "15/04/2004",
         "correo": "julieta.bariandaran@davinci.edu.ar",

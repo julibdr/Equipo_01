@@ -1,21 +1,6 @@
 <?php
 // (void) -> string
-require_once "classes/prod.php";
-
-
-function getDbProducts() {
-    $ObjConection = new Conection();
-    $conection = $ObjConection->getConection();
-
-    $query = "SELECT * FROM `products`";
-    $PDO = $conection->prepare($query);
-    $PDO->setFetchMode(PDO::FETCH_CLASS, "Product");
-    $PDO->execute();
-
-    $products = $PDO->fetchAll();
-
-    return $products;
-}
+// require_once "classes/prod.php";
 
 function leerContenido() {
     $content = file_get_contents("data/productos.json"); //string
@@ -28,7 +13,7 @@ function crearCard($list): string {
     $html = "";
     $html .= "<div class='row row-cols-2 m-4'>";
     foreach($list as $item) {
-       
+      
         $html .= "<div class='card g-3 m-3' style='width: 18rem'>";
         $html .= "<img src='{$item['imagen']}' class='card-img-top' alt='Nombre'>";
         $html .= "  <div class='card-body'>";
@@ -42,7 +27,6 @@ function crearCard($list): string {
         $html .= "<li class='list-group-item'>{$item['sistemaoperativo']}</li>";
         $html .= "</ul>";
         $html .= "</div>";
-        
     }
     $html .= "</div>";
     return $html;
@@ -51,8 +35,8 @@ function crearCard($list): string {
 ?>
 
 <?= crearCard(leerContenido()) ?>
-  
- <!-- <div class="card" style="width: 18rem;">
+
+<!-- <div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -63,5 +47,5 @@ function crearCard($list): string {
     <li class="list-group-item">A second item</li>
     <li class="list-group-item">A third item</li>
   </ul>
- 
+
 </div> -->
