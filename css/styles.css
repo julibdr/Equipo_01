@@ -39,15 +39,16 @@
     margin-right: 18%;
     margin-top: 4%;
   }
-
+  
   .card-title-nosotros {
     font-size: 1rem;
     font-weight: 500;
   }
-
+  
   .card-text-correo {
     font-size: 0.98rem;
   }
+  
 /*------- categorias -------- */
 
 .row {
@@ -60,3 +61,5 @@
   margin-left: calc(-.5 * var(--bs-gutter-x));
   text-align: center   !important;
 }
+
+
