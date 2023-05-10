@@ -29,5 +29,4 @@ class Mac {
     protected $categoria;
     protected $pantalla;
     protected $sistemaoperativo;
-
 }

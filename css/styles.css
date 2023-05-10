@@ -1,3 +1,5 @@
+
+
 .b-banner{
   background-color:rgba(242, 244, 255, 1);
 }
@@ -52,6 +54,7 @@
   margin-left: calc(-.5 * var(--bs-gutter-x));
   text-align: center   !important;
 }
+
 
 
 

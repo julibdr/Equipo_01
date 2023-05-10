@@ -3,19 +3,19 @@
 require_once "classes/prod.php";
 
 
-function getDbProducts() {
-    $ObjConection = new Conection();
-    $conection = $ObjConection->getConection();
+// function getDbProducts() {
+//     $ObjConection = new Conection();
+//     $conection = $ObjConection->getConection();
 
-    $query = "SELECT * FROM `products`";
-    $PDO = $conection->prepare($query);
-    $PDO->setFetchMode(PDO::FETCH_CLASS, "Product");
-    $PDO->execute();
+//     $query = "SELECT * FROM `products`";
+//     $PDO = $conection->prepare($query);
+//     $PDO->setFetchMode(PDO::FETCH_CLASS, "Product");
+//     $PDO->execute();
 
-    $products = $PDO->fetchAll();
+//     $products = $PDO->fetchAll();
 
-    return $products;
-}
+//     return $products;
+// }
 
 function leerContenido() {
     $content = file_get_contents("data/productos.json"); //string
