@@ -2,9 +2,9 @@
     <!-- ACA VA LA PARTE PROPIA DEL HOME -->
     <div class="position-relative overflow-hidden p-3 p-md-5 text-center bg-body-tertiary b-banner">
     <div class="col-md-5 p-lg-5 mx-auto my-5">
-      <h1 class="display-4 fw-normal">Punny headline</h1>
-      <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
-      <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+      <h1 class="display-4 fw-normal">Celularia</h1>
+      <p class="lead fw-normal">Somos una empresa que lleva 35 años acercando a los argentinos al universo Apple a través de soluciones integrales: dispositivos, accesorios y servicios. </p>
+      <a class="btn btn-outline-secondary" href="#">Comenzar</a>
     </div>
     <div class="product-device shadow-sm d-none d-md-block"></div>
     <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>

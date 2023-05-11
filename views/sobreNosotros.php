@@ -1,6 +1,6 @@
 <?php
 // (void) -> string
-require_once "classes/alumnos.php";
+
 
 
 function leerAlumno() {
