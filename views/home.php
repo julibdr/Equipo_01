@@ -32,7 +32,7 @@ devolución sin complicaciones para garantizar la satisfacción de nuestros clie
         <img src="img/iphone/iPhone-14jpg.jpg" rounded-circle width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect></img>
 
         <h2 class="fw-normal">Iphone</h2>
-        <p><a class="btn btn-secondary" href="#">Ver más</a></p>
+        <p><a class="btn btn-secondary" href="index.php?seccion=productos&categoria=celulares">Ver más</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <img src="img/ipad/ipad.jpg" rounded-circle width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect></img>

@@ -8,7 +8,8 @@
       "imagen": "img/iphone/iphone-SE.jpg",
       "categoria": "celulares",
       "pantalla":"4.7 pulgadas",
-      "sistemaoperativo":"iOS 16"
+      "sistemaoperativo":"iOS 16",
+      "subcategoria":"todos"
     },
     {
       "id": "2",
@@ -66,7 +67,7 @@
       "descripcion": "El nuevo iPad enamora a primera vista, con diseño de borde a borde perfecta para trabajar, darles forma a tus ideas y hacer videollamadas.Más poderoso, más bonito y más capaz.",
       "precio": 500,
       "imagen": "img/ipad/ipad.jpg",
-      "categoria": "Tablet",
+      "categoria": "tablet",
       "pantalla": "10.9 pulgadas",
       "sistemaoperativo": "IpadOS 16"
   },
