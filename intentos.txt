@@ -1,0 +1,29 @@
+// echo "<p>El nombre es: ".$_POST['nombre']." </p>";
+    // echo "<p>El apellido es: $apellido </p>";
+    // echo "<p>El email es: $email </p>";
+    // echo "<p>La consulta es: $consulta </p>";
+
+
+//     function crearDatos($list): string {
+// $html = "";
+// $html .= "<div class="card" style="width: 18rem;">";
+// $html .= "<ul class="list-group list-group-flush">";
+// $html .= "<li class="list-group-item">El nombre es: <?= $nombre ?></li>";
+// $html .="<li class="list-group-item">El apellido es: <?= $apellido ?></li>";
+// $html .="<li class="list-group-item">El email es: <?= $email ?></li>";
+// $html .="<li class="list-group-item">La consulta es: <?= $consulta ?></li>";
+// $html .="</ul>";
+// $html .="</div>";
+// }
+// return $html;
+
+
+// ?>
+
+// <?= crearDatos() ?> 
+
+
+<!-- <p>El nombre es: <?= $nombre ?></p>
+<p>El apellido es: <?= $apellido ?></p>
+<p>El email es: <?= $email ?></p>
+<p>La consulta es: <?= $consulta ?></p> -->
