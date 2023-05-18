@@ -1,7 +1,5 @@
 <?php
-    $vista = $_GET['seccion'];
-    $vista = $vista ? $vista : 'home';
-
+    $vista = isset($_GET['seccion']) ? $_GET['seccion'] : 'home';
 ?>
 <?php include('partials/header.php') ?>
 <?php include ("views/$vista.php")?>
