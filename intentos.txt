@@ -27,3 +27,46 @@
 <p>El apellido es: <?= $apellido ?></p>
 <p>El email es: <?= $email ?></p>
 <p>La consulta es: <?= $consulta ?></p> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php
+$nombre = $_POST['nombre'];
+$apellido = $_POST['apellido'];
+$email = $_POST['email'];
+$consulta = $_POST['consulta'];
+?>
+
+<div class="card" style="width: 18rem;">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <span class="label">El nombre es:</span>
+            <span class="data"><?php echo $nombre; ?></span>
+        </li>
+        <li class="list-group-item">
+            <span class="label">El apellido es:</span>
+            <span class="data"><?php echo $apellido; ?></span>
+        </li>
+        <li class="list-group-item">
+            <span class="label">El email es:</span>
+            <span class="data"><?php echo $email; ?></span>
+        </li>
+        <li class="list-group-item">
+            <span class="label">La consulta es:</span>
+            <span class="data"><?php echo $consulta; ?></span>
+        </li>
+    </ul>
+</div>
