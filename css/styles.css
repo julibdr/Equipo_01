@@ -1,5 +1,6 @@
-
-
+.miNav{
+  background-color: #E7E2DE;
+}
 .b-banner{
   background-color:rgba(242, 244, 255, 1);
 }
@@ -14,7 +15,7 @@
     transform: rotate(30deg);
   }
   
-  .product-device::before {
+.product-device::before {
     position: absolute;
     top: 10%;
     right: 10px;
@@ -25,7 +26,7 @@
     border-radius: 5px;
   }
   
-  .product-device-2 {
+.product-device-2 {
     top: -25%;
     right: auto;
     bottom: 0;
@@ -66,3 +67,25 @@
   margin-top: 30px;
 }
 
+/*------- productos -------- */
+
+.btnProd {
+  background-color: #3B4655;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  border-color: #3B4655;
+}
+.btnProd:hover{
+  background-color: #CBC5BD;
+  border-color:#CBC5BD ;
+  color: #3B4655;
+}
+/*------- contacto -------- */
+.formCon{
+
+ width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

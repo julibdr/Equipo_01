@@ -12,9 +12,16 @@ function filtrarPorCategoria($products, $categoria) {
         if ($prod['categoria'] == $categoria) {
             $productos_filtrados[] = $prod;
         }
-  
-  
 }  
 return $productos_filtrados;
+}
+function filtrarPorId($products, $detalleId) {
+    $detalles = [];
+    foreach ($products as $pr) {
+        if ($pr['id'] == $detalleId) {
+            $detalles[] = $pr; 
+        }
+    }
+    return $detalles;
 }
 ?>

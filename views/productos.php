@@ -21,7 +21,7 @@ if (!empty($cat)) {
 <div class="container">
     <div class="row">
 <?php foreach ($categoria as $item) {?>
-    <div class='card g-3 m-3' style='width: 18rem'>
+    <div class='card g-3 m-3 miCard' style='width: 18rem'>
     <img src="<?=$item['imagen']?>" class='card-img-top' alt="<?=$item['nombre']?>">
 
     <div class='card-body'>
@@ -29,10 +29,11 @@ if (!empty($cat)) {
     <p class='card-text'><?=$item['descripcion']?></p>
     </div>
     <ul class='list-group list-group-flush'>
-    <li class='list-group-item'><?=$item['precio']?></li>
-    <li class='list-group-item'><?=$item['pantalla']?></li>
-    <li class='list-group-item'><?=$item['categoria']?></li>
-    <li class='list-group-item'><?=$item['sistemaoperativo']?></li>
+    <li class='list-group-item'>Precio: <?=$item['precio']?></li>
+    <li class='list-group-item'>Pantalla: <?=$item['pantalla']?></li>
+    <li class='list-group-item'>Categoria: <?=$item['categoria']?></li>
+    <li class='list-group-item'>Sistema operativo: <?=$item['sistemaoperativo']?></li>
+    <a href="index.php?seccion=detalles&id=<?=$item['id']?>" class="btn btn-primary btnProd">Ver Detalles</a>
     </ul>
     </div>
 <?php } ?>
