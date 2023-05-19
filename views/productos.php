@@ -29,7 +29,7 @@ if (!empty($cat)) {
     <p class='card-text'><?=$item['descripcion']?></p>
     </div>
     <ul class='list-group list-group-flush'>
-    <li class='list-group-item'>Precio: <?=$item['precio']?></li>
+    <li class='list-group-item'>Precio: $<?=$item['precio']?> usd</li>
     <li class='list-group-item'>Pantalla: <?=$item['pantalla']?></li>
     <li class='list-group-item'>Categoria: <?=$item['categoria']?></li>
     <li class='list-group-item'>Sistema operativo: <?=$item['sistemaoperativo']?></li>
