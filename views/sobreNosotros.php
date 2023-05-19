@@ -1,3 +1,6 @@
+<main>
+<script src="https://kit.fontawesome.com/ae768101bd.js" crossorigin="anonymous"></script>
+</main>
 <?php
 // (void) -> string
 
@@ -20,7 +23,7 @@ function crearAlumno($list): string {
         $html .= "<h2 class='card-title-nosotros'>{$item['nombre']}</h2>";
         $html .= "<p class='card-text'>{$item['edad']}</p>";
         $html .= "<p class='card-text-correo'>{$item['correo']}</p>";
-        $html .= "<p class='card-text'>{$item['redes']}</p>";
+        $html .= "<p class='card-text'><i class='fa-brands fa-github' style='color: #000000;'></i> {$item['redes']}</p>";
         $html .= "</div>";
         $html .= "</div>";
 
