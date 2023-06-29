@@ -6,7 +6,7 @@
             Iniciar sesión
         </div>
         <div class="card-body">
-            <form action="views/autenticacion.php" method="POST" class="row">
+            <form action="autenticacion.php" method="POST" class="row">
                 <div class="mb-3 col-12">
                     <label for="exampleFormControlInput1" class="form-label">Email address</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com">
