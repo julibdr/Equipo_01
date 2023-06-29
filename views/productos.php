@@ -50,6 +50,7 @@ function filtrarPorCategoria($productos, $categoria) {
                     <li class='list-group-item'>Categoria: <?=$item->getCategoria()?></li>
                     <li class='list-group-item'>Sistema operativo: <?=$item->getSistema()?></li>
                     <a href="index.php?seccion=detalles&id=<?=$item->getId()?>" class="btn btn-primary btnProd">Ver Detalles</a>
+                    <a href="index.php?seccion=carrito" id="carrito" class="btn btn-primary btnProd">Comprar</a>
                 </ul>
             </div>
         <?php } ?>
