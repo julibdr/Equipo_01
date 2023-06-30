@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-06-2023 a las 01:25:36
+-- Tiempo de generación: 30-06-2023 a las 16:05:14
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.2.0
 
@@ -103,6 +103,25 @@ INSERT INTO `productos` (`id`, `nombre`, `precio`, `descripcion`, `imagen`, `cat
 (14, 'Studio Display', 6300, 'Presentamos el monitor Studio Display. Una envolvente pantalla Retina 5K de 27 pulgadas (1) con cámara de 12 MP con Encuadre Centrado, inclinación y altura ajustable, micrófonos con calidad de estudio y un sistema de sonido de seis bocinas (parlantes). El compañero ideal de cualquier Mac.\r\n', 'img/mac/studioDisplay.png', 'computadora', '27 pulgadas', 'macOs ventura'),
 (15, 'Pro Display XR', 6600, 'Eleva tu trabajo. Y muévelo. Cada aspecto del Pro Display XDR fue diseñado pensando en los usuarios profesionales. La base Pro Stand no es la excepción, ya que ofrece estabilidad sin ocupar mucho espacio y permite ajustar la altura, inclinación y orientación del monitor. Ideal para usarlo en posición horizontal o vertical. Ideal para cualquier tipo de trabajo.\r\n', 'img/mac/prodisplayxdr.jpeg', 'computadora', '32 pulgadas', 'macOs ventura');
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `email`, `password`) VALUES
+(1, 'julietabdr@icloud.com', '123456');
+
 --
 -- Índices para tablas volcadas
 --
@@ -121,6 +140,12 @@ ALTER TABLE `productos`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -135,6 +160,12 @@ ALTER TABLE `caracteristicas`
 --
 ALTER TABLE `productos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Restricciones para tablas volcadas
