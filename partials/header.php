@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celularia</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <link href="css/styles.css" rel="stylesheet">
 </head>
@@ -20,6 +20,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                    <a class="nav-link active" href="index.php?seccion=login"><i class="bi bi-person-fill" style="font-size:x-large;
+	margin-right: auto;"></i></a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="index.php?seccion=home">Home</a>
                 </li>
