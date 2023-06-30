@@ -8,18 +8,18 @@
         <div class="card-body">
             <form action="autenticacion.php" method="POST" class="row">
                 <div class="mb-3 col-12">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com">
                 </div>
                 <div class="mb-3 col-12">
-                    <label for="inputPassword" class="col-sm-12 col-form-label">Password</label>
+                    <label for="inputPassword" class="col-sm-12 col-form-label">Contraseña</label>
                     <div class="col-sm-12">
                         <input type="password" class="form-control" id="inputPassword" name="password">
                     </div>
                 </div>
 
                 <div class="mb-3 col-12 d-grid">
-                    <button class="btn btn-primary" type="submit">Iniciar</button>
+                    <button class="btn btn-primary" type="submit">Ingresar</button>
                 </div>
             </form>
         </div>
