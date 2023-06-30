@@ -18,7 +18,7 @@ if (!empty($cat)) {
 } else {
     $categoria = $productos;
 }
-//Mmemoria por URL
+//Memoria por URL
 $memoriaSeleccionada = isset($_GET['memoria']) ? $_GET['memoria'] : null;
 if ($memoriaSeleccionada) {
     $categoria = filtrarPorMemoria($categoria, $memoriaSeleccionada,$caract);
@@ -83,7 +83,7 @@ function filtrarPorMemoria($productos, $memoria,$caract)
                     <li class='list-group-item'>Categoria: <?=$item->getCategoria()?></li>
                     <li class='list-group-item'>Sistema operativo: <?=$item->getSistema()?></li>
                     <a href="index.php?seccion=detalles&id=<?=$item->getId()?>" class="btn btn-primary btnProd">Ver Detalles</a>
-                    <a href="index.php?seccion=carrito" id="carrito" class="btn btn-primary btnProd">Comprar</a>
+                    <a href="./actions/add_carrito_actions.php?id_producto=<?php echo $item->getId(); ?>&id_usuario=1&cantidad=1" class="btn btn-primary btnProd">Agregar al carrito</a>
                 </ul>
             </div>
         <?php } ?>
@@ -94,3 +94,4 @@ function filtrarProductos(memoria) {
     window.location.href = "index.php?seccion=productos&memoria=" + memoria;
 }
 </script>
+
