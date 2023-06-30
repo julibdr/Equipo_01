@@ -63,7 +63,7 @@ function filtrarPorMemoria($productos, $memoria,$caract)
         <div class="mb-3">
             <button type="button" class="btn btn-primary  btnProd" onclick="filtrarProductos(32)">32 GB</button>
             <button type="button" class="btn btn-primary  btnProd" onclick="filtrarProductos(64)">64 GB</button>
-            <button type="button" class="btn btn-primary  btnProd" onclick="filtrarProductos(96)">64 GB</button>
+            <button type="button" class="btn btn-primary  btnProd" onclick="filtrarProductos(96)">96 GB</button>
             <button type="button" class="btn btn-primary  btnProd" onclick="filtrarProductos(128)">128 GB</button>
             <button type="button" class="btn btn-primary  btnProd" onclick="filtrarProductos(256)">256 GB</button>
         </div>
