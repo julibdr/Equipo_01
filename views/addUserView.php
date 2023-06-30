@@ -1,9 +1,8 @@
-
 <div class="row justify-content-center" style="height: calc(100vh - 5rem); align-items: center; background: #ff00000f;">
 <div class="col col-md-6">
     <div class="card">
         <div class="card-header">
-            Iniciar sesión
+           Registrarse
         </div>
         <div class="card-body">
             <form action="autenticacion.php" method="POST" class="row">
@@ -20,7 +19,7 @@
 
                 <div class="mb-3 col-12 d-grid">
                     <button class="btn btn-primary" type="submit">Ingresar</button>
-                    <button class="btn btn-success" type="submit" style="margin-top: 2%;"><a href="index.php?seccion=addUserView" style="color: white; text-decoration: none;">Registrarse</a></button>
+                    
                 </div>
             </form>
         </div>

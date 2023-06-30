@@ -1,17 +1,17 @@
+
 <?php
 namespace classes;
 
-
-class autenticacion
+    class registroUsuario
 {
 
-    public function logIn(string $email, string $password) {
+    public function regUser(string $email, string $password) {
         try{
             $user = (new Usuario())->getUserByEmail($email);
             if(!$user) return false;
-            $loggedIn = ($user->getPassword() == $password);
-            $_SESSION["loggedIn"] = $loggedIn;
-            return $loggedIn;
+            $registroUser = ($user->getPassword() == $password);
+            $_SESSION["registroUser"] = $registroUser;
+            return $registroUser;
         } catch(Exception $e) {
             echo $e->getMessage();
         }
@@ -23,6 +23,3 @@ class autenticacion
     }
 
     }
-
-
-
