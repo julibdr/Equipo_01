@@ -34,6 +34,8 @@ $productos = $producto->getAll();
         $nombre = $producto_encontrado->getProducto();
         $precio = $producto_encontrado->getPrecio();
         $imagen = $producto_encontrado->getImagen();
+        $descripcion = $producto_encontrado->getDescripcion();
+        
     } else {
         // Manejar el caso en el que no se encuentre el producto
         $nombre = 'Producto no encontrado';
@@ -42,7 +44,7 @@ $productos = $producto->getAll();
     }
     ?>
 
-<div class="card mb-3" style="max-width: 540px;">
+<div class="card mb-3" style="max-width: 700px; margin-left: 25%; margin-top: 3%;">
     <div class="row g-0">
     <div class="col-md-4">
         <img src="<?=$imagen?>" class="img-fluid rounded-start" alt="<?=$nombre?>">
@@ -50,8 +52,8 @@ $productos = $producto->getAll();
     <div class="col-md-8">
         <div class="card-body">
         <h5 class="card-title"><?=$nombre?></h5>
-        <p class="card-text"><?=$precio?></p>
-
+        <p class="card-text"style="font-size: x-large;font-weight: 500;">US $<?=$precio?></p>
+        <p class="card-text"><?=$descripcion?></p>
         </div>
     </div>
     </div>
