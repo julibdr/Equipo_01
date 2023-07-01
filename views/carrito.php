@@ -1,6 +1,7 @@
 <?php
 use classes\Prod;
 require_once 'classes/Prod.php';
+require_once 'classes/Prod.php';
 $producto = new Prod();
 
 if (!isset($_SESSION['carrito'])) {
@@ -14,7 +15,7 @@ $productos = $producto->getAll();
 
 ?>
 
-<h1>Carrito de compras</h1>
+<h1 class="text-center mt-3">Carrito de compras</h1>
 
 <?php foreach ($carrito as $item): ?>
     <?php
@@ -44,7 +45,7 @@ $productos = $producto->getAll();
     }
     ?>
 
-<div class="card mb-3" style="max-width: 700px; margin-left: 25%; margin-top: 3%;">
+<div class="card mb-3" style="max-width: 700px; margin: 10%; margin-left: 25%; margin-top: 3%;">
     <div class="row g-0">
     <div class="col-md-4">
         <img src="<?=$imagen?>" class="img-fluid rounded-start" alt="<?=$nombre?>">
@@ -52,7 +53,7 @@ $productos = $producto->getAll();
     <div class="col-md-8">
         <div class="card-body">
         <h5 class="card-title"><?=$nombre?></h5>
-        <p class="card-text"style="font-size: x-large;font-weight: 500;">US $<?=$precio?></p>
+        <p class="card-text" style="font-size: x-large;font-weight: 500;">US $<?=$precio?></p>
         <p class="card-text"><?=$descripcion?></p>
         </div>
     </div>
