@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-06-2023 a las 16:05:14
+-- Tiempo de generación: 01-07-2023 a las 16:40:40
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.2.0
 
@@ -54,16 +54,44 @@ INSERT INTO `alumnos` (`nombre`, `apellido`, `imagen`, `correo`, `redes`, `edad`
 CREATE TABLE `caracteristicas` (
   `id` int(11) NOT NULL,
   `producto_id` int(11) DEFAULT NULL,
-  `color` varchar(25) DEFAULT NULL,
-  `disponibilidad` int(11) DEFAULT NULL
+  `memoria` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `caracteristicas`
 --
 
-INSERT INTO `caracteristicas` (`id`, `producto_id`, `color`, `disponibilidad`) VALUES
-(1, 1, 'Dorado', 10);
+INSERT INTO `caracteristicas` (`id`, `producto_id`, `memoria`) VALUES
+(1, 1, 64),
+(3, 2, 128),
+(4, 8, 32),
+(8, 7, 256),
+(9, 10, 32),
+(10, 1, 32),
+(11, 2, 128),
+(12, 3, 64),
+(13, 4, 256),
+(14, 5, 96),
+(15, 6, 128),
+(16, 8, 96),
+(17, 9, 64),
+(18, 10, 128),
+(19, 11, 256),
+(20, 12, 256),
+(21, 14, 256);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `carrito`
+--
+
+CREATE TABLE `carrito` (
+  `id` int(11) NOT NULL,
+  `id_producto` int(11) DEFAULT NULL,
+  `id_usuario` int(11) DEFAULT NULL,
+  `cantidad` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -120,7 +148,10 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `email`, `password`) VALUES
-(1, 'julietabdr@icloud.com', '123456');
+(1, 'sergiomedina@gmail.com', '123456'),
+(5, 'ailenalvarez@gmail.com', '123456'),
+(6, 'julietabariandaran@gmail.com', '123456'),
+(7, 'lourdesmartinez@gmail.com', '123456');
 
 --
 -- Índices para tablas volcadas
@@ -132,6 +163,14 @@ INSERT INTO `usuarios` (`id`, `email`, `password`) VALUES
 ALTER TABLE `caracteristicas`
   ADD PRIMARY KEY (`id`),
   ADD KEY `producto_id` (`producto_id`);
+
+--
+-- Indices de la tabla `carrito`
+--
+ALTER TABLE `carrito`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_producto` (`id_producto`),
+  ADD KEY `id_usuario` (`id_usuario`);
 
 --
 -- Indices de la tabla `productos`
@@ -153,7 +192,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `caracteristicas`
 --
 ALTER TABLE `caracteristicas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+
+--
+-- AUTO_INCREMENT de la tabla `carrito`
+--
+ALTER TABLE `carrito`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT de la tabla `productos`
@@ -165,7 +210,7 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- Restricciones para tablas volcadas
@@ -176,6 +221,13 @@ ALTER TABLE `usuarios`
 --
 ALTER TABLE `caracteristicas`
   ADD CONSTRAINT `caracteristicas_ibfk_1` FOREIGN KEY (`producto_id`) REFERENCES `productos` (`id`);
+
+--
+-- Filtros para la tabla `carrito`
+--
+ALTER TABLE `carrito`
+  ADD CONSTRAINT `carrito_ibfk_1` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id`),
+  ADD CONSTRAINT `carrito_ibfk_2` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

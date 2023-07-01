@@ -20,7 +20,6 @@
 
                 <div class="mb-3 col-12 d-grid">
                     <button class="btn btn-primary" type="submit">Ingresar</button>
-                    <button class="btn btn-success" type="submit" style="margin-top: 2%;"><a href="index.php?seccion=addUserView" style="color: white; text-decoration: none;">Registrarse</a></button>
                 </div>
             </form>
         </div>

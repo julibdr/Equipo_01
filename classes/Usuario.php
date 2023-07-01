@@ -72,8 +72,6 @@ protected $password;
         return $result;
     }
 
-
-
     public function add($email, $password) {
         $conexion = (new Connection())->getConection();
         $query = "INSERT INTO usuario (email, password) VALUES (:email, :password)";
@@ -88,4 +86,6 @@ protected $password;
         $stmt->setFetchMode(PDO::FETCH_CLASS, self::class);
         $stmt->fetch();
     }
+
+
 }

@@ -1,7 +1,5 @@
-
 <?php
 session_start();
-$vista = $_GET['seccion'];
 
 
     $vista = isset($_GET['seccion']) ? $_GET['seccion'] : 'home';
