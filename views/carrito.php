@@ -19,7 +19,7 @@ $productos = $producto->getAll();
 <?php foreach ($carritoItems as $item): ?>
     <?php
         $id_producto = $item['id_producto'];
-         $cantidad = $item->getCantidad();
+         $cantidad = $item['cantidad'];
 
     $producto_encontrado = null;
     foreach ($productos as $producto) {
