@@ -8,8 +8,7 @@ if (!isset($_SESSION['carrito'])) {
     $_SESSION['carrito'] = [];
 }
 
-$carrito = $_SESSION['carrito'];
-
+$carritoItems = $_SESSION['carrito']; 
 
 $productos = $producto->getAll();
 
@@ -17,10 +16,10 @@ $productos = $producto->getAll();
 
 <h1 class="text-center mt-3">Carrito de compras</h1>
 
-<?php foreach ($carrito as $item): ?>
+<?php foreach ($carritoItems as $item): ?>
     <?php
-    $id_producto = $item['id_producto'];
-    $cantidad = $item['cantidad'];
+        $id_producto = $item['id_producto'];
+         $cantidad = $item->getCantidad();
 
     $producto_encontrado = null;
     foreach ($productos as $producto) {

@@ -36,9 +36,15 @@ class Carrito
         return $this->id_usuario;
     }
 
-    public function getCantidad()
+    public function getCantidad($id_producto)
     {
-        return $this->cantidad;
+        $conexion = (new Connection())->getConection();
+        $query = "SELECT cantidad FROM carrito WHERE id_producto = :id_producto";
+        $stmt = $conexion->prepare($query);
+        $stmt->bindParam(':id_producto', $id_producto);
+        $stmt->execute();
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $row['cantidad'];
     }
 
     public function agregarAlCarrito($id_producto, $id_usuario, $cantidad)
@@ -73,16 +79,14 @@ class Carrito
     public function disminuirCantidad($id_producto)
     {
         $conexion = (new Connection())->getConection();
-        $query = "UPDATE carrito SET cantidad = cantidad - 1 WHERE id_producto = :id_producto";
+        //obtengo la cantidad actual
+        $cantidad = $this->getCantidad($id_producto);
+        if ($cantidad > 1){
+             $query = "UPDATE carrito SET cantidad = cantidad - 1 WHERE id_producto = :id_producto";
         $stmt = $conexion->prepare($query);
         $stmt->bindParam(':id_producto', $id_producto);
         $stmt->execute();
-
-        // Obtener la nueva cantidad después de la disminución
-        $nueva_cantidad = $this->getCantidad($id_producto);
-
-        // Verificar si la cantidad llegó a cero y eliminar el registro si es así
-        if ($nueva_cantidad <= 0) {
+        }else{
             $this->eliminarCarrito($id_producto);
         }
     }
